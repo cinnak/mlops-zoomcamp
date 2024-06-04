@@ -158,3 +158,30 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+
+# mlruns目录，包含所有的MLflow实验数据
+mlruns/
+# 一般用来存储临时或输出文件
+tmp/
+
+# 和Python相关的一些常见文件，方便开发
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.sqlite
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+# 环境配置文件
+.env
+.venv
+env/
+venv/
+# VS Code settings
+.vscode/
+# 一些特定IDE或系统的临时文件
+.idea/
+.DS_Store  # macOS
+Thumbs.db  # Windows
