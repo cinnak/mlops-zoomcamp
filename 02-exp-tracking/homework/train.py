@@ -37,6 +37,7 @@ def run_train(data_path: str):
     mlflow.log_metric("rmse", rmse)
 
 if __name__ == '__main__':
+    mlflow.set_tracking_uri("http://localhost:5000")
     mlflow.set_experiment("nyc-green-taxi")
     mlflow.autolog(log_input_examples=False, log_model_signatures=False)
     with mlflow.start_run():
